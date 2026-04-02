@@ -4,6 +4,7 @@ describe('Tela de login', () => {
 
   it('Realizar login com sucesso', () => {
 
+      
     cy.start()
     cy.login('papito@webdojo.com','katana123')
     cy.get('[data-cy="user-name"]')
