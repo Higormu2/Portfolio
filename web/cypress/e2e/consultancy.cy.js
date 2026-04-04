@@ -22,10 +22,27 @@ describe('Formulário de consultoria', () => {
             .should('have.value', '(11) 97753-1730')
 
         //label[text()="Tipo de Consultoria"]/..//select
-            cy.contains('label', 'Tipo de Consultoria')
+        cy.contains('label', 'Tipo de Consultoria')
             .parent()
             .find('select')
             .select('In Company')
+
+        cy.contains('label','Pessoa Física')
+            .should('have.text','Pessoa Física')
+            .find('input')
+            .check()
+
+         cy.contains('label','Pessoa Jurídica')
+            .find('input')
+            .should('be.not.checked')
+
+        cy.contains('div','CPF')
+            .should('have.text','CPF')
+            .find('input')
+            .type('40870196839')
+            .should('be.visible')
+
+
 
     })
 
