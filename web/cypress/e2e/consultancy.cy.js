@@ -42,7 +42,44 @@ describe('Formulário de consultoria', () => {
             .type('40870196839')
             .should('be.visible')
 
+        
+        const discoveryChannels = [
+            'Instagram',
+            'LinkedIn',
+            'Udemy',
+            'YouTube',
+            'Indicação de Amigo',
+        ]
 
+        discoveryChannels.forEach((channel)=>{
+
+             cy.contains('label', channel)
+            .find('input')
+            .check()
+            .should('be.checked')
+
+
+        })
+
+        const tecnolodia = [
+            'Funcional',
+            'Regressão',
+            'Automação',
+            'Javascript'
+        ]
+        tecnolodia.forEach((tech)=>{
+
+            cy.contains('label','Tecnologias')
+                .parent()
+                .find('input')
+                .type(tech)
+                .type('{enter}')
+
+        })
+
+
+        
+           
 
     })
 
