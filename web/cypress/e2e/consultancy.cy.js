@@ -61,6 +61,14 @@ describe('Formulário de consultoria', () => {
 
         })
 
+        cy.contains('label','Mais Detalhes')
+            .parent()
+            .find('textarea')
+            .type('Meu nome é Higor e estou desempregado por forças maiores, e agora estou me lascando sem dinheiro')
+        
+        
+        
+        
         const tecnolodia = [
             'Funcional',
             'Regressão',
