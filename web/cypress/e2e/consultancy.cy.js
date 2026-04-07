@@ -61,6 +61,9 @@ describe('Formulário de consultoria', () => {
 
         })
 
+        cy.get('input[type="file"')
+            .selectFile('./cypress/fixtures/Curriculum Higor 2025V1.pdf', {force: true})
+
         cy.contains('label','Mais Detalhes')
             .parent()
             .find('textarea')
@@ -73,7 +76,8 @@ describe('Formulário de consultoria', () => {
             'Funcional',
             'Regressão',
             'Automação',
-            'Javascript'
+            'Javascript',
+            'Pessoa'
         ]
         tecnolodia.forEach((tech)=>{
 
@@ -82,6 +86,12 @@ describe('Formulário de consultoria', () => {
                 .find('input')
                 .type(tech)
                 .type('{enter}')
+                
+                cy.contains('label','Tecnologias')
+                    .parent()
+                    .contains('span',tech)
+                    .should('be.visible')
+                
 
         })
 
