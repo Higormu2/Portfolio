@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+import 'cypress-real-events'
+
 Cypress.Commands.add('login', (email, senha) => {
 
     cy.contains('h2', 'Acesse sua conta')

@@ -115,7 +115,7 @@ describe('Formulário de consultoria', () => {
 
     })
 
-    it.only('Deve verificar os campos obrigatórios', () => {
+    it('Deve verificar os campos obrigatórios', () => {
 
         cy.goTo('Formulários', 'Consultoria')
         cy.contains('button', 'Enviar formulário')
