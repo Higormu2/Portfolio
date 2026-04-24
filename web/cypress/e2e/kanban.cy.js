@@ -4,7 +4,7 @@ describe('Kanban Board', () => {
 
     beforeEach('Acessar e Logar', () => {
         cy.start()
-        cy.login('papito@webdojo.com', 'katana123')
+        cy.login()
         cy.goTo('Kanban', 'Kanban Board')
     })
 

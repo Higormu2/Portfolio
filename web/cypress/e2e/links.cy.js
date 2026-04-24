@@ -2,7 +2,7 @@ describe('Links abrindo nova guia/janela',()=>{
 
     beforeEach('Acessar e logar',()=>{
         cy.start()
-        cy.login('papito@webdojo.com','katana123')
+        cy.login()
     })
 
     it('Validando o atributo do link do Instagram',()=>{

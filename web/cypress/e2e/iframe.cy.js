@@ -2,7 +2,7 @@ describe('iFrame',()=>{
 
     beforeEach('Acessar e Logar',()=>{
         cy.start()
-        cy.login('papito@webdojo.com','katana123')
+        cy.login()
         cy.goTo('Video','Video')
     })
     

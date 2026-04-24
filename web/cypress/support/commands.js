@@ -25,17 +25,18 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import 'cypress-real-events'
+import './actions/consultancy.actions'
 
-Cypress.Commands.add('login', (email, senha) => {
+Cypress.Commands.add('login', () => {
 
     cy.contains('h2', 'Acesse sua conta')
         .should('be.visible')
 
     cy.get('[placeholder="Digite seu e-mail"]')
-        .type(email)
+        .type('papito@webdojo.com')
 
     cy.get('[placeholder="Digite sua senha"]')
-        .type(senha)
+        .type('katana123')
 
     cy.contains('button', 'Entrar').click()
 
@@ -55,3 +56,4 @@ Cypress.Commands.add('goTo',(buttonName, pageTitle)=>{
         cy.contains('h1', pageTitle)
             .should('be.visible')
 })
+

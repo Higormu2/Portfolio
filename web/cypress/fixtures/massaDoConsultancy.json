@@ -1,0 +1,52 @@
+{
+  "personal": {
+    "name": "Higor Damasceno",
+    "email": "higordamascenostella@gmail.com",
+    "phone": "11 97753-1730",
+    "consultancyType": "Individual",
+    "personType": "CPF",
+    "document": "40870196839",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn",
+      "Udemy",
+      "YouTube",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/Curriculum Higor 2025V1.pdf",
+    "description": "Meu nome é Higor e estou desempregado por forças maiores, e agora estou me lascando sem dinheiro",
+    "tecnologic": [
+      "Funcional",
+      "Regressão",
+      "Automação",
+      "Javascript",
+      "Pessoa"
+    ],
+    "terms": true
+  },
+  "company": {
+    "name": "Higor Damasceno",
+    "email": "higordamascenostella@gmail.com",
+    "phone": "11 97753-1730",
+    "consultancyType": "In Company",
+    "personType": "cnpj",
+    "document": "57381172000170",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn",
+      "Udemy",
+      "YouTube",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/Curriculum Higor 2025V1.pdf",
+    "description": "Meu nome é Higor e estou desempregado por forças maiores, e agora estou me lascando sem dinheiro",
+    "tecnologic": [
+      "Funcional",
+      "Regressão",
+      "Automação",
+      "Javascript",
+      "Pessoa"
+    ],
+    "terms": true
+  }
+}

@@ -2,7 +2,7 @@ describe('Formulário de consultoria', () => {
 
     beforeEach('Start e Login',()=>{
         cy.start()
-        cy.login('papito@webdojo.com', 'katana123')
+        cy.login()
 
     })
     
