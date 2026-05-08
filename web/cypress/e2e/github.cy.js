@@ -71,7 +71,7 @@ describe('Gerenciamento de Perfis no Github',()=>{
 
     })
 
-    it.only('',()=>{
+    it.only('Deve acessar meu perfil no github',()=>{
 
         const profile = {
 
